@@ -1,0 +1,160 @@
+pax_global_header00006660000000000000000000000064141477122410014515gustar00rootroot0000000000000052 comment=b8910194429453914edb0de066f73845b4a1fb96
+css/000077500000000000000000000000001414771224100116515ustar00rootroot00000000000000css/exercise2.css000066400000000000000000000024401414771224100142540ustar00rootroot00000000000000:root {
+  font-size: 16px;
+}
+body {
+  background-color: #CECECE;
+  margin: 0;
+}
+
+header, nav, footer {
+  text-align: center;
+}
+
+nav > a {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.card {
+  width: 50%;
+  background-color: whitesmoke;
+  margin: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem #0009;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0.1rem 0.1rem 0.5rem #0009;
+}
+
+.card__header {
+  font-size: 1.2rem;
+  background-color: firebrick;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.card__data {
+  padding: 2rem;
+}
+.card__data > *{
+  border: 1px solid #0009;
+  list-style-type: square;
+}
+
+.card__data > *:first-child {
+  border-radius: 0 0.5rem 0 0;
+  background: linear-gradient(#0009, #0000);
+}
+
+.card__data > *:last-child {
+  border-radius: 0 0 0.5rem 0;
+  background: linear-gradient(#0000, #0009);
+}
+
+
+.card__data > *:only-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: linear-gradient( #0009, #0000, #0009);
+}
+
+.card__synopsis {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px dotted currentColor;
+
+}
+
+.card__synopsis > p::first-line {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.card__synopsis > p::first-letter {
+  font-size: 2em;
+}
+
+.card__footer {
+  border-top: 1px double #0009;
+}
+
+index.html000066400000000000000000000101271414771224100130570ustar00rootroot00000000000000<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units & Basic properties - Exercise 2</title>
+  <link rel="stylesheet" href="css/exercise2.css"/>
+</head>
+<body>
+  <header>
+    <h1>Books</h1>
+    <nav>
+      <a href="#book1">Book 1</a>
+      <a href="#book2">Book 2</a>
+      <a href="#book3">Book 3</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card" id="book1">
+      <header class="card__header">
+        <h2>The Wise Man's Fear</h2>
+      </header>
+      <div class="card__content">
+        <ul class="card__data">
+          <li><b>Series</b>: The Kingkiller Chronicle</li>
+          <li><b>Book</b>: 2/3</li>
+          <li><b>Year</b>: 2011</li>
+        </ul>
+        <div class="card__synopsis">
+          <p>On the second day of his recounting the story of his life to Chronicler at the Waystone Inn, Kvothe continues the narrative commenced in The Name of the Wind, wherein a younger Kvothe pursues his education at the University. There, he carries on a feud with fellow student Ambrose, culminating in Ambrose getting him brought up on charges of Consortation with Demonic Powers, a capital crime, for having called the Name of the Wind. Despite successfully defending himself in court, Kvothe has guaranteed himself an extremely high term tuition due to the negative attention he has attracted at the University. Kvothe follows the advice of his friends and teachers at the University and decides to take a term off to chase the wind. To postpone having to pay his debt to the loan shark Devi, he uses several of his more prized possessions as collateral before setting off.</p>
+        </div>
+      </div>
+      <footer class="card__footer">
+        Author: Patrick Rothfuss
+      </footer>
+    </div>
+
+    <div class="card" id="book2">
+      <header class="card__header">
+        <h2>Mistborn: The Final Empire</h2>
+      </header>
+      <div class="card__content">
+        <ul class="card__data">
+          <li><b>Series</b>: Mistborn Era One</li>
+          <li><b>Book</b>: 1/3</li>
+          <li><b>Year</b>: 2006</li>
+        </ul>
+        <div class="card__synopsis">
+          <p>Mistborn: The Final Empire is set on the dystopian world of Scadrial, where ash constantly falls from the sky, all plants are brown, and supernatural mists cloak the landscape every night. One thousand years before the start of the novel, the prophesied Hero of Ages ascended to godhood at the Well of Ascension in order to repel the Deepness, a terror threatening the world whose true nature has since been lost to time. Though the Deepness was successfully repelled and mankind saved, the world was changed into its current form by the Hero, who took the title "Lord Ruler" and has ruled over the Final Empire for a thousand years as an immortal tyrant and god. Under his rule, society is stratified into the nobility, believed to be the descendants of the friends and allies who helped him achieve godhood, and the brutally oppressed peasantry descended from those who opposed him, known as skaa. </p>
+        </div>
+      </div>
+      <footer class="card__footer">
+        Author: Brandon Sanderson
+      </footer>
+    </div>
+
+    <div class="card" id="book3">
+      <header class="card__header">
+        <h2>Norse Mythology</h2>
+      </header>
+      <div class="card__content">
+        <ul class="card__data">
+          <li><b>Year</b>: 2017</li>
+        </ul>
+        <div class="card__synopsis">
+          <p>Norse Mythology is a 2017 book by Neil Gaiman. The book is a retelling of several stories from Norse mythology, including the theft of Thor's hammer and the binding of Fenrir. In the introduction, Gaiman describes where his fondness for the source material comes from. The book received positive reviews from critics.</p>
+        </div>
+      </div>
+      <footer class="card__footer">
+        Author: Neil Gaiman
+      </footer>
+    </div>
+  </main>
+  <footer>
+    <p>Copyleft: Alain Perez Riaño</p>
+  </footer>
+</body>
+</html>
